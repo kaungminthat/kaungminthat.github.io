@@ -1,13 +1,15 @@
 
 body{
     margin: 0px;
+    background-image: linear-gradient(45deg, rgb(0, 174, 255) 30%, rgb(0, 60, 255) 30%, rgb(0, 13, 128) 40%);
 }
-img{
+img[src="./image.webp"]{
     width: 30%;
-    height: 65%;
+    height: 70%;
     position: absolute;
     right: 100px;
     top: 50px;
+    animation: mine 2s infinite;
 }
 body {
     font-family: Arial, sans-serif;
@@ -17,6 +19,7 @@ body {
 .top-menu-bar {
     background-color: #00ff1a;
     overflow: hidden;
+    border-radius: 10px;
 }
 .top-menu-bar a {
     float: left;
@@ -25,8 +28,64 @@ body {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    border-radius: 20px;
 }
 .top-menu-bar a:hover {
-    background-color: #ddd;
-    color: rgb(0, 76, 255);
+    background-color: #3c00ff;
+    color: rgb(255, 255, 255);
 }
+h1{
+    color: brown;
+}
+.cyan{
+    color: cyan;
+}
+#lol{
+    color: #3c00ff;
+    font-size: medium;
+}
+.now{
+    background-color: #3c00ff;
+    color: rgb(255, 255, 255) !important;
+}
+strong{
+    font-style: bold;
+    font-size: 60px;
+}
+h1 {
+    animation: mymove 3s infinite;
+  }
+  @keyframes mine{
+    10%{border-radius: 13px; }
+    20%{border-radius: 18px; }
+    30%{border-radius: 27px; }
+    40%{border-radius: 35px; }
+    50%{border-radius: 41px; }
+    60%{border-radius: 45px; }
+    70%{border-radius: 35px; }
+    80%{border-radius: 27px; }
+    90%{border-radius: 18px; }
+    100%{border-radius: 13px; }  
+  }
+  @keyframes mymove {
+    50% {text-shadow: 5px 10px 0px rgb(0, 0, 0);}
+  }
+  img[src="./juices.png"]{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    animation: tran 3s infinite;
+  }
+  @keyframes tran{
+    0% {opacity: 100%;}
+    20% {opacity: 80%;}
+    50% {opacity: 60%;}
+    80% {opacity: 40%;}
+    100% {opacity: 20%;}
+  
+     80% {opacity: 40%;}
+    90% {opacity: 60%;}
+    95% {opacity: 80%;}
+  100% {opacity: 100%;}
+  
+  }
